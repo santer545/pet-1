@@ -1,1 +1,37 @@
+@use '@angular/material' as mat;
+
+html {
+  color-scheme:orange;
+  @include mat.theme((
+    color: mat.$orange-palette,
+    typography: Roboto,
+    density: 0
+  ));
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.w-100 {
+  width: 100%;
+}
+
+.mat-grid-tile {
+  .mat-grid-tile-content {
+    padding: 16px;
+  }
+}
+
+.align-items-top {
+  .mat-grid-tile-content {
+    align-items: flex-start;
+  }
+}
+
+.justify-content-start {
+  .mat-grid-tile-content {
+    justify-content: flex-start;
+  }
+}
